@@ -1,0 +1,24 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "report": "npx mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json && npx marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.5.2",
+    "mocha": "^11.7.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "cypress-terminal-report": "^7.2.0"
+  }
+}
